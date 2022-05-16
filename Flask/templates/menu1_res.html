@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block subtitle %}
-<strong>미래 기후 예측</strong> - 결과
+<strong style="font-family: NEXON Lv2 Gothic Bold;">미래 기후 예측</strong> - 결과
 {% endblock %}
 {% block content %}
 <div class="row">
     <!-- <div class="col-1"></div> -->
     <div class="col-12">
-        <table class="table">
+        <table class="table" style="font-family: NEXON Lv2 Gothic;">
             <tr>
                 {% set list = month.split('-') %}
                 {% if temp == 'temp_min' %}
@@ -20,7 +20,7 @@
                 {% endif %}
             </tr>
             <tr>
-                <td colspan="2" style="text-align: center;">
+                <td colspan="2" style="text-align: center; font-family: NEXON Lv2 Gothic Bold;">
                     <button class="btn btn-primary" onclick="location.href='/menu1'">재실행</button>
                 </td>
             </tr>
