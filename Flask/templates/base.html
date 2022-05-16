@@ -17,11 +17,19 @@
             </script>
         {% endif %}
     {% endwith %}
+    <style>
+        a{
+            color: whitesmoke;
+        }
+        .nav-link {
+            background-color: rgb(8, 32, 64);
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light navbar-darkgray">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <!-- Brand/logo -->
-        <a class="navbar-brand" style="margin-left:50px;margin-right:100px;" href="#">
+        <a class="navbar-brand" style="margin-left:50px;margin-right:100px;" href="{% if menu.home %}#{% else %}/{% endif %}">
             <img src= 'static/img/logo.JPG' alt="Logo" style="height:45px;">
         </a>
 
@@ -40,10 +48,10 @@
             </span>
         </nav>
     </nav>
-
-    <div class="container">
+    
+    <div class="container show-grid">
         <div class="row mt-3">
-            <div class="col-3">
+            <div class="col-md-3">
                 <ul class="nav flex-column nav-pills">
                     <div class="dropdown-divider"></div>
                     <li class="nav-item">
@@ -72,7 +80,7 @@
         </div>
     </div>  
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center fixed-bottom">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center fixed-bottom">
         <span class="navbar-text">
             Copyright &copy; 2022 B반 세미 프로젝트2조 데이터차이(권기일, 김민중, 송민성, 신재웅, 원동찬). All rights reserved.
         </span>
