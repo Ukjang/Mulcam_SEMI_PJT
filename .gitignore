@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 .DS_Store
 .gitignore
+Flask/static/img/weather_graph.png
+Flask/static/data/folium_pred_weather.html
