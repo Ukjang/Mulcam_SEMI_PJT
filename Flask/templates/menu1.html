@@ -4,10 +4,10 @@
 {% endblock %}
 {% block content %}
 <div class="row">
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
     <div class="col-10">
         <form action="/menu1" method="post">
-            <td>예측지역:</td>
+            <td>예측지역: </td>
             <select name="region">
                 <option value="강화">강화</option>
                 <option value="거제">거제</option>
@@ -105,10 +105,8 @@
                 </select>
             </td>
             <td><button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button></td>
-
-            
         </form>
     </div>
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
 </div>
 {% endblock %}

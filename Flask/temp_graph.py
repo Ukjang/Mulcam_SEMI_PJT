@@ -1,4 +1,4 @@
-from cv2 import rotate
+
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
