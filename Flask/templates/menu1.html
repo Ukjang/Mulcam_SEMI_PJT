@@ -4,25 +4,22 @@
 {% endblock %}
 {% block content %}
 <div class="row">
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
     <div class="col-10">
-        <form action="/menu1" method="post">
-            <td>예측지역:</td>
+        <form action="/menu1" method="post" style="font-family: NEXON Lv2 Gothic Light;">
+            <td>예측지역: </td>
             <select name="region">
                 <option value="강화">강화</option>
                 <option value="거제">거제</option>
                 <option value="거창">거창</option>
-                <option value="고산">고산</option>
                 <option value="고창">고창</option>
                 <option value="고흥">고흥</option>
-                <option value="관악산">관악산</option>
                 <option value="광주">광주</option>
                 <option value="구미">구미</option>
                 <option value="군산">군산</option>
                 <option value="금산">금산</option>
                 <option value="남원">남원</option>
                 <option value="남해">남해</option>
-                <option value="대관령">대관령</option>
                 <option value="대구">대구</option>
                 <option value="대전">대전</option>
                 <option value="동두천">동두천</option>
@@ -30,7 +27,6 @@
                 <option value="목포">목포</option>
                 <option value="무안">무안</option>
                 <option value="문경">문경</option>
-                <option value="문산">문산</option>
                 <option value="밀양">밀양</option>
                 <option value="보령">보령</option>
                 <option value="보은">보은</option>
@@ -77,7 +73,6 @@
                 <option value="천안">천안</option>
                 <option value="철원">철원</option>
                 <option value="청주">청주</option>
-                <option value="추풍령">추풍령</option>
                 <option value="춘천">춘천</option>
                 <option value="태백">태백</option>
                 <option value="통영">통영</option>
@@ -85,36 +80,29 @@
                 <option value="합천">합천</option>
                 <option value="해남">해남</option>
                 <option value="홍천">홍천</option>
-                <option value="흑산도">흑산도</option>
             </select>
-            <td>
-                <select name="month">
-                    <option value="1">1월</option>
-                    <option value="2">2월</option>
-                    <option value="3">3월</option>
-                    <option value="4">4월</option>
-                    <option value="5">5월</option>
-                    <option value="6">6월</option>
-                    <option value="7">7월</option>
-                    <option value="8">8월</option>
-                    <option value="9">9월</option>
-                    <option value="10">10월</option>
-                    <option value="11">11월</option>
-                    <option value="12">12월</option>
-                </select>
-            </td>
-            <td>
-                <select name="temp">
-                    <option value="temp_min">최저기온</option>
-                    <option value="temp_max">최고기온</option>
-                    <option value="temperature">평균기온</option>
-                </select>
-            </td>
-            <td><button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button></td>
-
-            
+            <select name="month">
+                <option value="1">1월</option>
+                <option value="2">2월</option>
+                <option value="3">3월</option>
+                <option value="4">4월</option>
+                <option value="5">5월</option>
+                <option value="6">6월</option>
+                <option value="7">7월</option>
+                <option value="8">8월</option>
+                <option value="9">9월</option>
+                <option value="10">10월</option>
+                <option value="11">11월</option>
+                <option value="12">12월</option>
+            </select>
+            <select name="temp">
+                <option value="temp_min">최저기온</option>
+                <option value="temp_max">최고기온</option>
+                <option value="temperature">평균기온</option>
+            </select>
+            <button type="submit" class="btn btn-primary mr-2" style="background-color: rgb(8,32,64); font-family: NEXON Lv2 Gothic Bold;">실행</button>
         </form>
     </div>
-    <div class="col-1"></div>
+    <!-- <div class="col-1"></div> -->
 </div>
 {% endblock %}
